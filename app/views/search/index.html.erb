@@ -1,3 +1,21 @@
-<% @stations.each do |station| %>
-<%= station.station_name %>
-<% end %>
+<h1>Search Results for Stations</h1>
+
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Fuel Types</th>
+    <th>Distance (mi)</th>
+    <th>Access Times</th>
+  </tr>
+
+  <% @stations.each do |station| %>
+    <tr>
+      <td><%= station.station_name %></td>
+      <td><%= station.street_address %></td>
+      <td><%= station.fuel_type_code %></td>
+      <td><%= station.distance %></td>
+      <td><%= station.access_days_time %></td>
+    </tr>
+  <% end %>
+</table>

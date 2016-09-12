@@ -7,7 +7,7 @@ class StationService
 
   def search_locations_by_zipcode(parameters)
     response = @connection.get("/api/alt-fuel-stations/v1/nearest.json") do |req|
-      req.params['location'] = parameters[:zip]
+      req.params['location'] = parameters[:q]
       req.params['limit'] = 10
     end
     parse(response)

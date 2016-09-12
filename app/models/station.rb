@@ -10,4 +10,5 @@ class Station < OpenStruct
       Station.new(raw_station)
     end
   end
+
 end
