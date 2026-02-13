@@ -22,7 +22,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-gem 'faraday'
+gem 'faraday', '>= 2.14.1'
 gem 'figaro'
 gem 'factory_girl'
 gem 'bootstrap-sass', '3.2.0.2'
